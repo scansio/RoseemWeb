@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Daily Sales Summition Form
+        </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap-reboot.css">
+       
+        <script src="scripts/jquery3.9.0.js"></script>
+        <script src="jquery/jquery-ui.min.js"></script>
+
+        <script src="jquery/jquery-ui.min.js"></script>
+        <script src="bootstrap-4.0.0/dist/js/bootstrap.js"></script>
+        <script src="bootstrap-4.0.0/js/dist/button.js"></script>
+        <script src="scripts/myScript.js"></script>
+        <link rel="stylesheet" href="formstyle.css">
+        <link rel="icon" type="image/png" href="img/logo.png" >
+    </head>
+    
+    <body class="background">
+        <div class="text-center header-cont">
+            <header>
+                <h1>
+                    ROSEEM COMPUTERS
+                </h1>
+                <h4>
+                    Peformance Track Book
+                </h4>
+            </header>
+        </div>
+        <nav class="navbar c-navbar navbar-light bg-faded navbar-expand-sm">
+            <div  class="container">
+
+                <a  href="/" target="_self" class="navbar-brand">
+                    <img alt="ROSEEM COMPUTERS LOGO" class="nav_logo" src="img/logo.png" width="50%" height="50%" >
+                </a> 
+                <button type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed" aria-expanded="false" aria-controls="nav-text-collapse" style="overflow-anchor: none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div  id="nav-text-collapse" class="navbar-collapse collapse" style="display: none;">
+                    <ul  class="navbar-nav ml-auto align-items-center">
+                        <li  class="nav-item">
+                            <a  href="/" target="_self" class="nav-link">
+                                Home
+                            </a>
+                        </li> 
+                        <li  class="nav-item">
+                            <a class="nav-link display">
+                                Display
+                            </a>
+                        </li> 
+                        <li  class="nav-item">
+                            <a target="_self" class="nav-link">
+                                Chart
+                            </a>
+                        </li> 
+                        <li  class="nav-item">
+                            <a target="_self" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bodyParser">
+           
+            <div class="card container form-cont"> 
+                <h2 class="text-center ibp" style="color: white;">Daily Sales Submition Form</h2>
+                
+                <form class="form" method="post">
+                    <div class="err" style="text-align: center; color: red; visibility: hidden;"></div>
+                    <div class="container row">
+                        <label for="totalAmount" class="label col-sm-5">Total amount:</label>
+                        <input type="number" name="totalAmount" title="Total amount of the day" class="textarea col-sm-7" placeholder="Total Amount" aria-placeholder="Total Amount" required>
+                   </div><hr>
+                    <div class="container row">
+                        <label for="expense" class="label col-sm-5">Expense:</label>                            
+                        <input type="number"  name="expense" title="Expenses for the day" class="textarea col-sm-7" placeholder="Expense" aria-placeholder="Expense" required>
+                    </div><hr>
+                    <div class="container row">
+                        <label for="expense_description"  class="label col-sm-5">Description:</label>
+                        <input type="text" name="description" title="Description of the expense" class="textarea col-sm-7" placeholder="Description" aria-placeholder="Description" required>
+                    </div><hr>
+                    <div class="container row">
+                        <label for="saved"  class="label col-sm-5">Saved balance:</label>                            
+                        <input type="number" name="saved" title="Remaining amount after expenses" class="textarea col-sm-7" placeholder="Remaining amount" aria-placeholder="Remaining amount" required>
+                    </div><hr>
+                    <div class="container row">
+                        <label for="change"  class="label col-sm-5">Left change:</label>
+                        <input type="number" name="change" title="Change left for the next day" class="textarea col-sm-7" placeholder="Left change" aria-placeholder="Left change" required>
+                    </div><hr>
+                    <div class="container row">
+                        <label for="user"  class="label col-sm-5">User name:</label>                            
+                        <input type="text" name="user" title="The user name" class="textarea col-sm-7" placeholder="Username" aria-placeholder="username" required>
+                    </div><hr>
+                   
+                </form>
+                 <div class="container row ">
+                    <button class="submitbtn col-sm-7 offset-sm-3" type="submit" name="submit" id="input_go">Go</button>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer text-center">
+           <h6>
+                <span class=" column stackable ui grid">
+                    &COPY 2021 Roseem Computers. All Right Reserve.
+                </span>  
+            </h6>
+        </footer>        
+    </body>
+</html>
+

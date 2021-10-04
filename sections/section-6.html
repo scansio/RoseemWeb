@@ -1,0 +1,47 @@
+<section id="section-6">
+    <h1>Password protection</h1>
+    <p>
+        There are three password types that can be set in Microsoft Word:
+        <ol>
+            <li>Password to open a document</li>
+            <li>Password to modify a document</li>
+            <li>Password restricting formatting and editing</li>
+        </ol>
+        The second and the third type of passwords were developed by Microsoft for convenient shared use 
+        of documents rather than for their protection. There is no encryption of documents that are protected 
+        by such passwords, and the Microsoft Office protection system saves a hash sum of a password in a 
+        document's header where it can be easily accessed and removed by the specialized 
+        software. Password to open a document offers much tougher protection that had been steadily 
+        enhanced in the subsequent editions of Microsoft Office.
+        Word 95 and all the preceding editions had the weakest protection that utilized a conversion of a 
+        password to a 16-bit key.
+    </p>
+    <p>
+        Key length in Word 97 and 2000 was strengthened up to 40 bit. However, modern cracking software 
+        allows removing such a password very quickly � a persistent cracking process takes one week at 
+        most. Use of rainbow tables reduces password removal time to several seconds. Some password 
+        recovery software can not only remove a password but also find an actual password that was used 
+        by a user to encrypt the document using brute-force attack approach. Statistically, the possibility of 
+        recovering the password depends on the password strength.
+    </p>
+    <p>
+        Word's 2003/XP version default protection remained the same but an option that allowed advanced 
+        users choosing a Cryptographic Service Provider was added. If a strong CSP is chosen, guaranteed 
+        document decryption becomes unavailable, and therefore a password can't be removed from the 
+        document. Nonetheless, a password can be fairly quickly picked with a brute-force attack, because 
+        its speed is still high regardless of the CSP selected. Moreover, since the CSPs are not active by 
+        default, their use is limited to advanced users only.
+    </p>
+    <p>
+        Word 2007 offers significantly more secure document protection which utilizes the modern Advanced 
+        Encryption Standard (AES) that converts a password to a 128-bit key using a SHA-1 hash function 
+        50000 times. It makes password removal impossible (as of today, no computer that can pick the key 
+        in a reasonable amount of time exists), and drastically slows the brute-force attack speed down to 
+        several hundreds of passwords per second.
+    </p>
+    <p>
+        Word's 2010 protection algorithm was not changed apart from the increasing number of SHA-1 
+        conversions up to 100000 times, and consequently, the brute-force attack speed decreased two 
+        times more.
+    </p>
+</section>

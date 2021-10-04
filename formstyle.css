@@ -1,0 +1,220 @@
+input {
+    object-position: right;
+    position: right;
+    place-content: right;
+    offset-position: 10px;
+    caret-color: blue;
+    color:darkred;
+    background-position: right;
+    background-color: floralwhite;
+}
+
+/*.img{
+    border-radius: 50px 10px 50px 10px;
+    width: 250px;
+    height: 250px;
+    padding: 5px 5px 5px 5px;
+  
+}
+.img:hover{
+    border: 2.8px ridge #0414eb67;
+    border-style:outset;
+}
+div > img:hover{
+    color: rgba(11, 156, 137, 0.685);
+    background-color: #007bff;
+    border: 2.8px ridge #0414eb67;
+    border-style:outset;
+}*/
+/*div[class="container"]{
+    color: rgba(11, 156, 137, 0.685);
+    background-color: #007bff;
+    border: 5px solid ridge;
+    border-color: #74076e9a;
+    border-style: double;
+    border-radius: 10px 5px 10px 5px;
+    width: auto;
+    height: 500px;
+}*/
+   
+.imgContainer{
+    border-radius: 50px 10px 50px 10px;
+    width: fit-content;
+    height: fit-content;
+    
+  
+}
+.img{
+    border-radius: 50px 10px 50px 10px;
+    width: 250px;
+    height: 250px;
+    padding: 5px 5px 5px 5px;
+    margin:20px 20px 20px 20px;
+  
+}
+.img:hover{
+    color: rgba(11, 156, 137, 0.685);
+    border: 3.8px ridge #0414eb67;
+    border-style:outset;
+}
+.popover {
+    max-width: 600px;
+    max-height: 600px;
+    width: 400px;
+    height: 350px;
+    top: 0;
+    z-index: 1000;
+    display:d;
+}
+.txt-con{
+    padding-right:20px ;
+    margin:10px 0px 0px 10px;
+}
+@media (max-width: 520px){
+    .imgContainer{
+        margin-left: 8.88888883%;
+    }
+    h1{
+        font-size: 70% !important;
+        font-style: bold;
+        color: rgb(4, 151, 16);
+    }
+}
+@media (max-width: 789px){
+    .imgContainer{
+        margin-left: 8.88888883%;
+    }
+    h1{
+        font-size: 200% !important;
+        font-style: bold;
+        color: rgb(4, 151, 16);
+    }
+}
+@media (max-width: 470px){
+    .imgContainer{
+        margin-left: 8.88888883%;
+    }
+    h1{
+        font-size: 90% !important;
+        font-style: bold;
+        color: rgb(4, 151, 16);
+    }
+}
+@media (max-width: 380px){
+    .imgContainer{
+        margin-left: 8.88888883%;
+    }
+    h1{
+        font-size: 100% !important;
+        font-style: bold;
+        color: rgb(4, 151, 16);
+    }
+}
+/*.imgContainer:hover{
+    color: rgba(11, 156, 137, 0.685);
+    /*background-color: #007bff;
+    border: 2.8px ridge #0414eb67;
+    border-style:outset;
+}
+#form-con{
+    top: 10vh;
+}*/
+h1{
+    font-size: 300%;
+    font-style: bold;
+    color: rgb(4, 151, 16);
+}
+/* .header{
+    position: inherit;
+    height: 10% !important;
+} */
+.header-cont{
+    padding: 2px;
+    background-color:azure;
+    position: relative !important;
+}
+input, input:focus, [type="submit"]{
+    border-radius: 20px;
+    
+}
+input:focus, [type="submit"]:hover{
+    box-shadow: rgb(7, 36, 100);
+    border: 5px groove blue;
+
+}
+[type="submit"], .row, .card{
+    background-color: #ffffff00; 
+}
+footer{
+    background-color: #013501;
+    height: 10vh;
+
+}
+/* div{
+    margin: 20px 20px 20px 20px;
+    padding: 5px 5px 5px 5px;
+} */
+.background {
+    padding: 0.5%;
+    width: 100%;
+    height: fit-content;
+    background-image: url(img/logo.png);
+    background-repeat:space;
+    background-size: 100%;
+    background-position: center;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition-duration: 1000ms;
+    transition-delay: 200ms;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: italic normal 25px'Times New Roman';
+}
+.footer, .header-cont, .popover{
+    top: 0;
+    left:0;
+    right:0;
+}
+.form-cont{
+    margin-top: 5em;
+     position: relative; 
+    /* top: 400px !important;*/
+}
+.footer{
+    color: whitesmoke;
+    position: relative !important;
+    /* top: 80vh !important; */
+    margin-top: 30%;
+    display: block ruby;
+}
+nav{
+    position:sticky !important;
+    top: 0 !important;
+    height: 1.4em;
+    background-color: azure;
+    z-index: 1000;
+}
+.nav_logo{
+    width: 100%;
+    height: 100%;
+}
+a:hover{
+    cursor:pointer;
+}
+html[lang]{
+    width: 100%;
+    height: fit-content;
+}
+.sText{
+    display: flex !important;
+}
+.invalid{
+    border: 2px solid red;
+    border-radius: 13px;
+    outline-color: red;
+}
+.err{
+    margin-bottom: 20px;
+}
+.show{
+    visibility: visible !important;
+}
+

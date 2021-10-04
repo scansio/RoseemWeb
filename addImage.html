@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Add Image To Database
+        </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap-reboot.css">
+       
+        <script src="scripts/jquery3.9.0.js"></script>
+        <script src="jquery/jquery-ui.min.js"></script>
+        <script src="scripts/myScript.js"></script>
+
+        <script src="jquery/jquery-ui.min.js"></script>
+        <script src="bootstrap-4.0.0/dist/js/bootstrap.js"></script>
+        <script src="bootstrap-4.0.0/js/dist/button.js"></script>
+         <link rel="stylesheet" href="formstyle.css">
+    </head>
+    <body >
+        <div class=" row container" style="height: 100px"></div>
+            <div class="row" style="vertical-align: middle; position: sticky; ">
+                <div class="col-md-3"></div>
+                <div class="card col-md-5 ">
+                    <form action="addImage.php" method="POST" class="form-horizontal login js-show" id="login_form" enctype="multipart/form-data">
+                       <div class="container row">
+                            <label for="add"  class="label col-md-5" >Add: </label>
+                            <input type="file" name="add[]" title="Select mutliple file to upload" class="col-sm-7" onChange="thumbnailPreview(this.files);" multiple>
+                       </div><hr>
+                      
+                        <div class="row container">
+                            <input class="btn btn-primary col-md-12" type="submit" id="input_go" >
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        <div class="container" id="preview">
+        
+        </div>
+    </body>
+</html>
